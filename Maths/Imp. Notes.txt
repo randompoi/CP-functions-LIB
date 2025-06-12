@@ -1,0 +1,80 @@
+# Number of numbers in the range [X, Y] divisible by Z are ==>
+  (Y/Z) - (X/Z) , if X % Z != 0
+  (Y/Z) - (X/Z) + 1 , if X % Z == 0
+
+# ceil(n, k) = floor(n + k - 1, k)
+  Sample Problem: https://codeforces.com/contest/1476/problem/A
+
+# Sum of 2 numbers 'a' and 'b' will be divisible by 'k' ==>
+  iff sum of their remainders is divisible by 'k' i.e. ((a % k) + (b % k)) % k = 0.
+
+# Upper bound on the #divisors of a natural number n can be taken as O(n ^ 1/3), although it's not completely
+  true.
+  Visit for more info: https://codeforces.com/blog/entry/14463
+
+# For any integer k and positive integer n, let k mod n denote the remainder when k is divided by n. 
+  More formally, r = k mod n is the smallest non-negative integer such that (k − r) is divisible by n. 
+  It always holds that 0 ≤ k mod n ≤ n − 1.
+
+  And x = (n - r) % n is the smallest non-negative integer such that (k + x) is divisible by n. 
+
+# If m and n are nonzero integers, and more generally, nonzero elements of an integral domain, it is said that 
+  m divides n, m is a divisor of n or n is a multiple of m, and this is written as m | n,
+  if there exists an integer k, or an element k of the integral domain, such that m * k = n.
+
+# If 0 <= a < m and 0 <= b < m
+  then, (a + b) % m will either be equal to --->
+  1. (a + b) or 
+  2. a - (m - b) or b - (m - a)
+
+  * Ques. based on this concept: https://codeforces.com/contest/1484/problem/B
+
+# If a number is divisible by 3, then the sum of digits of that number is also divivible by 3 and
+  vice verse.
+  * Ques. based on this concept: https://codeforces.com/contest/1498/problem/A
+
+# Given a number as
+  A = B + C * N   if ( B, C < N )
+  then A % N = B and A / N = C
+  
+  * Ques. based on this concept: https://www.interviewbit.com/problems/rearrange-array/
+
+# A number 'x' is divisible by (2^a) if the number produced by the last 'a' digits of 'x' is divisible 
+  by (2^a), 
+  * Same goes for (5^a) and (10^a).
+
+  Ques. based on this concept: https://codeforces.com/contest/1511/problem/B
+
+# Imp points regarding 𝑷𝑬𝑹𝑴𝑼𝑻𝑨𝑻𝑰𝑶𝑵𝑺 & 𝑪𝑶𝑴𝑩𝑰𝑵𝑨𝑻𝑰𝑶𝑵𝑺 ===>
+  https://www.cs.sfu.ca/~ggbaker/zju/math/perm-comb-more.html
+
+# gcd(a, b) = gcd(b, a % b) = gcd(a, |a-b|) = gcd(b, |a-b|)
+  Note: The same thing also goes for gcd for more than 2 numbers.
+        
+  For more info see this ques: https://codeforces.com/problemset/problem/1458/A
+  Editorial of the above ques: https://www.youtube.com/watch?v=yFw1N7El84Y 
+
+# If (a % b) > (b % a) implies (b > a)
+  If (a % b) == (b % a) implies (b == a)
+
+  Ques. based on this concept: https://codeforces.com/problemset/problem/1407/C
+
+# If gcd(a, n) == 1 and gcd(b, n) == 1 implies gcd(a * b, n) == 1
+  Vice versa is also true.
+
+  https://www.youtube.com/watch?v=SslPWR2N5jA
+  Ques. based on this concept: https://codeforces.com/problemset/problem/1514/C
+
+# Every number can be represented uniquely in any integral base greater than 1. It will result in a 
+  unique representation.
+  https://codeforces.com/blog/entry/70898?#comment-554230
+
+# If (x < y), then (x % y) = x
+  If(x >= y), then (x % y) <= (x - 1) / 2
+
+  Ques. based on this concept: https://codeforces.com/problemset/problem/1617/C
+
+# By the triangle inequality, for all real numbers x, y, z, we have:
+  |x − y| + |y − z| ≥ |x − z|, with equality if and only if min(x, z) ≤ y ≤ max(x, z).
+
+  Ques. based on this concept: https://codeforces.com/contest/1656/problem/A
