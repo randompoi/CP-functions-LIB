@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-
+// this algorithm work if M is coprime with 10
 // Counts how many substrings of s are divisible by M
 ll count_divisible_substrings(const string& s, int M) {
     unordered_map<int, ll> count;
